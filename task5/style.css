@@ -1,0 +1,129 @@
+*{
+    font-size: 40px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',serif;
+    background-color: #FFEEEE;
+    margin: 0;
+}
+header{
+    margin-top: 2%;
+}
+h2{
+    
+    color: #257b96;
+    text-align: center;
+}
+#top{
+    width: 98%;
+    margin: 1%;
+    position: relative;
+}
+ul{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul li{
+    text-align: center;
+    width: 33%;
+    font-size: 0.3em;
+    float: left;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    cursor: pointer;
+    padding: 2% 0;
+    background-color: #2ba6cb;
+    border: 1px solid #1e728c;
+    color: white;
+    font-weight: bold;
+}
+li.active{
+    background-color: #2284A1;
+}
+li:hover{
+    background-color: #2284A1;
+}
+#clock{
+    position: relative;
+    width: 100%;
+}
+#time{
+    text-align: center;
+}
+#buttons{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#buttons button{
+    font-size: 0.4em;
+    color: white;
+    font-weight: bold;
+    margin: 0.1%;
+    padding: 2% 0;
+    width: 25%;
+}
+#time span{
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: bold;
+}
+#start{
+    background-color: green;
+    border: 1px solid rgb(3, 43, 3);
+}
+#stop{
+    background-color: rgb(214, 0, 0);
+    border: 1px solid rgb(128, 0, 0);
+}
+#reset{
+    background-color: rgb(156, 156, 156);
+    border: 1px solid rgb(75, 74, 74);
+}
+
+button{
+    font-family: 'Poppins',serif;
+}
+
+button:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+button:active {
+    background: #e5e5e5;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+     outline: none;
+  }
+
+@media only screen and (min-width:769px){
+    h1{
+        font-size: 2em;
+    }
+    #time span{
+
+        font-size: 2.5em;
+    }
+    #buttons{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    #buttons button{
+        width: 15%;
+        margin: 1% 0.5%;
+    }
+}

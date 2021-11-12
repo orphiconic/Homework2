@@ -1,0 +1,133 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins',serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#59c7d8, #5880b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#letter-quality{
+    color:red;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container input{
+    width: 20vw;
+    height: 7vh;
+    font-size: 1rem;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background:linear-gradient(#3477c4,#22b8bd);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+}
+
+.boxes .error{
+    background-color: rgb(255, 0, 0);
+}
+
+.box input{
+    width: 100%;
+    font-size: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins',serif;
+}
+
+.box input:focus{
+    cursor: text;
+}
+
+.box-cursor{
+    cursor: pointer;
+}
+
+.boxes .add-box{
+    background-color: rgb(203, 206, 208);
+    color: white;
+    font-weight: bold;
+}
+
+.delete-box{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top:0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    border-radius: 0 0 0 5px;
+    font-weight: 700;
+    display: none;;
+}
+
+.box:hover .delete-box{
+    display: flex;
+}
+
+.input-container, input{
+    border-radius: 0.8rem;
+}
+
+.input-container input{
+    border: 0.1rem solid grey;
+}
+
+.input-container input:focus {
+    border: 0.2rem solid white;
+    outline:none;
+    background:radial-gradient(ellipse at center, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+}

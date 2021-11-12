@@ -1,0 +1,22 @@
+#suggestion h4{
+    font-size: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+#suggestion{
+    position: absolute;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 70%;
+    color: black;
+    z-index: 3;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(196,196,196,1);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(196,196,196,1);
+    box-shadow: 10px 10px 10px 0px rgba(196,196,196,0.1);
+
+}
+
+.active{
+    color:white;
+}
